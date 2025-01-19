@@ -22,12 +22,6 @@ PC用のスタイル
     min-width: 960px;
     margin: 0 auto 0 auto;
   }
-  #menu-sp {
-    display: none;
-  }  
-  #nav-sp {
-    display: none;
-  }  
 
   /* ヘッダー */
   header {
@@ -64,26 +58,39 @@ PC用のスタイル
   #nav-pc>a:active {
     color: #0d0d0d;
   }
+
+  /* スマホ用メニューを非表示にする */
+  #menu-sp {
+    display: none;
+  }  
+
+  /* スマホ用ナビゲーションを非表示にする */
+  #nav-sp {
+    display: none;
+  }  
 }
 
 /*================
 スマホ用のスタイル 
 =================*/
-@media screen and (max-width: 7688px) {
+@media screen and (max-width: 768px) {
   /* 横幅設定 */
   body {
     min-width: 375px;
     margin: 0 0 0 0;
   }
-  /* PC ナビゲーションを非表示にする */
+  /* PC用ナビゲーションを非表示にする */
   #nav-pc {
     display: none;
   }
   
+  /* スマホメニューの装飾 */
   #menu-sp {
     float: right;
     padding: 0;
   }
+
+  /* スマホナビゲーションの装飾 */
   #nav-sp {
     background-color: #ce933e;
     position: absolute;
@@ -134,5 +141,4 @@ PC用のスタイル
     background-repeat: no-repeat;
     background-position: right top;
   }
-
 }
